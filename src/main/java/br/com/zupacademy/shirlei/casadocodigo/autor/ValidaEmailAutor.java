@@ -21,7 +21,9 @@ public class ValidaEmailAutor implements Validator {
 
     @Override
     public void validate(Object target, Errors errors) {
-        if(errors.hasErrors()){ return; }
+        if(errors.hasErrors()){
+            return;
+        }
 
         NovoAutorRequest autorDto = (NovoAutorRequest) target;
         Optional<Autor> autorOp = autorRepository.findByEmail(autorDto.getEmail());
