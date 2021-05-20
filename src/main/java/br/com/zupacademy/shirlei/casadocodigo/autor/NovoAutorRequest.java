@@ -1,7 +1,6 @@
 package br.com.zupacademy.shirlei.casadocodigo.autor;
 
 import javax.persistence.GeneratedValue;
-import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.validation.constraints.Email;
