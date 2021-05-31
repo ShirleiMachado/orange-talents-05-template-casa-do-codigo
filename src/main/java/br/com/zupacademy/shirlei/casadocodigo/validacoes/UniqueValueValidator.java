@@ -24,6 +24,9 @@ public class UniqueValueValidator implements ConstraintValidator<UniqueValue, Ob
     @Override
     public void initialize(UniqueValue parametros) {
         domainAttribute = parametros.fieldName();
+
+
+
         klass = parametros.domainClass();
     }
 
